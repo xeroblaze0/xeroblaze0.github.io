@@ -3,7 +3,7 @@ layout: post
 title:  Computing Logic Funcitons using Perceptrons
 date:   2019-11-20
 description: Using layered perceptrons to compute logic functions
-tags: nerual-net machine-learning
+tags: nerual-net machine-learning python
 thumbnail: xeroblaze0.github.io/assets/perceptron/img/nn_02.png
 ---
 <p>

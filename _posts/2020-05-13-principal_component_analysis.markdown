@@ -3,7 +3,7 @@ layout: post
 title:  Principal Component Analysis
 date:   2020-05-13
 description: Using PCA to determine number of presynaptic inputs of a cell
-tags: maths stats neuroscience matlab
+tags: math stats neuroscience matlab
 ---
 
 <p>

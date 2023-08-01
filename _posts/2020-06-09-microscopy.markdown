@@ -4,7 +4,7 @@ title:  Microscopy and Image Analysis
 date:   2020-06-09
 description: Using FIJI/ImageJ to analyze cell populations
 tags: biology neuroscience stats matlab
-thumbnail:
+thumbnail: /assets/fiji/fig_05.png
 ---
 
 ### FIJI

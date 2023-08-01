@@ -1,10 +1,12 @@
 ---
-layout: page
+layout: post
 title: Using Baxter for Object Recognition and Manipulation
 description: Embedded Systems Final Project
 img: assets/baxter/terminator.gif
+thumbnail: assets/baxter/terminator.gif
 importance: 1
-category: work
+# category: work
+tags:  computer-vision robots control python embedded-systems
 # related_publications: einstein1956investigations, einstein1950meaning
 ---
 

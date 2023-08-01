@@ -4,7 +4,7 @@ title:  Function Approximation Using Radial Basis Functions
 date:   2020-01-15
 description: Using radial basis functions to approximate a linear mapping
 tags: math stats biology matlab
-# thumbnail: xeroblaze0.github.io/assets/perceptron/img/nn_02.png
+thumbnail: /assets/rbf/Figure_3.png
 ---
 
 <p>

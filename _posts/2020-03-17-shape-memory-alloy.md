@@ -1,11 +1,13 @@
 ---
-layout: page
+layout: post
 title: Shape Memory Alloy Actuation
 description: Equilibrium Point Control 
 date: 2020-03-17
 img: /assets/sma/img01.jpg
+thumbnail: /assets/sma/img01.jpg
 importance: 1
-category: fun
+# category: fun
+tags: arduino control embedded-systems
 # related_publications: einstein1956investigations, einstein1950meaning
 ---
 

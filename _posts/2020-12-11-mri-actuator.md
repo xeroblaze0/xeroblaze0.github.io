@@ -1,11 +1,13 @@
 ---
-layout: page
+layout: post
 title: MRI Compatible Actuator
 description: Artificial Tactile Stimulation 
 date: 2020-12-11
 img: /assets/mri/fig_01.png
+thumbnail: /assets/mri/fig_01.png
 importance: 1
-category: work
+# category: work
+tags: PIC C++ 3D-printing CAD embedded-systems
 # related_publications: einstein1956investigations, einstein1950meaning
 ---
 

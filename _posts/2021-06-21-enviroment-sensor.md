@@ -1,11 +1,13 @@
 ---
-layout: page
+layout: post
 title: Environment Sensor with Display
 description: An Arduino Project
 date: 2021-06-21
-img: /assets/enviro_sensor/img/screen.jpg
+img: /assets/enviro_sensor/img/screen.png
+thumbnail: /assets/enviro_sensor/img/screen-thumb.png
 importance: 1
-category: fun
+# category: fun
+tags: arduino sensors embedded-systems
 # related_publications: einstein1956investigations, einstein1950meaning
 ---
 
@@ -108,7 +110,7 @@ From here, we normalize color activity by dividing each color channel by the sum
 We use these values with the visible light data to give us RGB luminosity data. With this and the IR luminosity data earlier, we can make a "full spectrum" wavelength response graph. 
 
 <p>
-    <center><img src="/assets/enviro_sensor/img/screen.jpg" width="80%;" height="100%;" alt/>
+    <center><img src="/assets/enviro_sensor/img/screen.png" width="80%;" height="100%;" alt/>
     <br>
     <em>Figure 4: Spectral data displayed on screen</em></center>
 </p>

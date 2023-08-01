@@ -3,8 +3,8 @@ layout: post
 title: Design Principals for NHP Laboratory Animals
 date: 2022-11-21
 description: 
-tags: CAD neuroscience 
-thumbnail: 
+tags: CAD neuroscience 3D-printing
+thumbnail: /assets/monkey/img/03.png
 ---
 
 ## Naxos Labs

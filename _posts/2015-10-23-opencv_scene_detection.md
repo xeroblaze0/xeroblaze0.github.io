@@ -1,11 +1,13 @@
 ---
-layout: page
-title: Shape Memory Alloy Actuation Through Equilibrium Point Control
+layout: post
+title: OpenCV Object and Scene Detection
 description: Computer Vision for Vehicles
 date: 2015-10-23
 img: assets/opencv/opencv.png
+thumbnail: assets/opencv/opencv.png
 importance: 1
-category: work
+# category: work
+tags: computer-vision machine-learning C++
 # related_publications: einstein1956investigations, einstein1950meaning
 ---
 

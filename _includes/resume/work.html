@@ -4,16 +4,21 @@
   <li class="list-group-item">
     <div class="row">
       <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
-        {% if content.startDate %}
+        {% if content.startDate == content.endDate %}
+        {% assign date = content.endDate %}
+        {% elsif content.startDate %}
         {% assign startDate = content.startDate | split: "-" | slice: 0,2 | join: "." %}
         {% assign endDate   = content.endDate   | split: "-" | slice: 0,2 | join: "." | default: "Present" %}
         {% assign date = startDate | append: " - "%}
         {% assign date = date | append: endDate %}
         {% else %}
-        {% assign date = "" %}
+        {% assign date = content.endDate %}
         {% endif %}
         <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px;">
           {{ date }}
+        </span>
+        <span class="text-capitalize align-middle" style="min-width: 75px; word-wrap: normal">
+          {{ content.location }}
         </span>
       </div>
       <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">

@@ -4,6 +4,6 @@ permalink: /cv/
 title: Resume
 nav: true
 nav_order: 4
-cv_pdf: /assets/hay_alex_resume.pdf
+cv_pdf: hay_alex_resume.pdf
 # description: This is a description of the page. You can modify it in 'pages/_cv.md'. You can also change or remove the top pdf download button.
 ---

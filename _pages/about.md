@@ -18,7 +18,7 @@ latest_posts: true  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 back_to_top: true # set to false to disable the back to top button
-icon: favicon.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+
 ---
 
 My name is Alex Hay, I work at the intersection of engineering and neuroscience in the field of rehabilitation, specifically control of prostethic devices.

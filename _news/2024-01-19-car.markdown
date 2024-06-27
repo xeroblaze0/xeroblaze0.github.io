@@ -1,0 +1,206 @@
+---
+layout: post
+title: Toybaru - Porsche Killer
+date: 2024-01-19
+description: Daily driver turned Porsche killer
+tags: car mech
+thumbnail: /assets/car/car_01.jpeg
+---
+
+<!-- <p>
+  <a href=""></a><div class=""></div>
+  <a href="https://github.com/alexanderhay2020/499_pneumatic"><div class="color-button">GitHub</div></a>
+  <a href="https://youtu.be/s4PYeK4FzfA"><div class="color-button">YouTube</div></a>
+  <a href="/assets/pdf/manual.pdf"><div class="color-button">Manual</div></a>
+  <a href="https://drive.google.com/drive/folders/13laoiJDyfBOlWCCcYVfk1w05I2iibtdy?usp=sharing"><div class="color-button">Solidworks</div></a>
+</p> -->
+
+------
+## History
+
+<div class="img_row">
+    <img class="col three" src="/assets/car/car_01.jpeg">
+</div>
+
+<br>
+
+In 2015 I bought a Scion FRS, still under warranty with 38k miles on it. It became a therapy project and a reflection of my own station in life. I saw it as a challenge to see how far I could go with my daily driver. The motivation to do this has always been there and I think always will be. Who doesn't love fast, fun, cars.
+
+## Modificaitons
+
+<br>
+
+<div class="img_row">
+    <img class="col three" src="/assets/car/logos.png">
+</div>
+
+<br>
+
+ * Tein Flex Z Coilovers
+ * Borla V2 Exhaust Header
+ * STi Aluminum Intake Header
+ * HKS Oil Cooler
+ * Saikou Michi Catch Cans
+ * Radium Fuel Rails
+ * Injector Dynamics 1050x Fuel Injectors
+ * E85 Flex Fuel Sensor
+ * HKS Supercharger
+
+## Maintenance
+
+After 2 years of living in Chicago then moving to Montreal for another 2 years, the car needed attention. My brakes needed replaced and one of the rear bearing hubs was going bad. Years of driving in corrosive environments with spacers installed was about to teach me a lesson.
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="/assets/car/damage1.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="/assets/car/damage2.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="/assets/car/damage3.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+<div class="col three caption">
+    The damage was such that I had to drill through the spacer to remove it from the stud. The stud was also damaged.
+</div>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="/assets/car/brake1.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="/assets/car/brake3.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="/assets/car/brake4.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="/assets/car/brake5.jpg" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="/assets/car/brake6.jpg" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+<div class="caption">
+    Old vs new
+</div>
+
+The installation was aggressive, enough that I had bent the brake shield and was causing it to rub. Easy fix, but an arguably my most sketchy diagnostic yet; running the car in gear on blocks.
+
+<div class="img_row">
+    <img class="col three" src="/assets/car/brake7.jpg">
+</div>
+
+<div class="caption">
+    Don't try this at home
+</div>
+
+## Oil System
+
+Moving on to the fun stuff, I start with an HKS oil cooler for a few reasons; it doesn't require any other parts, it increases engine longevity, and is one of the cornerstones of the rest of the build. The installation is fairly invasive, requiring me to remove the front bumper and cut into several parts. HKS is a quality company but there things lost in translation in the manual. 
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="/assets/car/oil1.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="/assets/car/oil2.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="/assets/car/oil3.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+<div class="col three caption">
+    The radiatior mounts in front of the wheel. I used a dremel to cut through the bumper and fender liner to allow airflow.
+</div>
+
+At the same time I also installed new triple gauges that allow me to monitor the oil system pressure and temperature. It's something I've always wanted since the first Fast and Furious movie, but more importantly they give me peace of mind that I can actively monitor the equipment I installed.
+
+<div class="img_row">
+    <img class="col three" src="/assets/car/gauge1.jpg">
+</div>
+
+<div class="col three caption">
+    Gauge test, they are reading from the sensors. Boost is not attached at this time
+</div>
+
+## Intake & Fuel System
+
+At the start of the summer I bought an aluminum intake manifold from a Subaru tech on Facebook Marketplace. It sat in the back of my trunk for awhile before the rest of the parts came in. 
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="/assets/car/manifold2.jpg" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="/assets/car/manifold4.jpg" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+The fuel system mounts on top of the manifold and I wanted to do everything in one shot. Attached to the manifold were two Radium fuel rails with Injector Dynamics 1050x fuel injectors, more than doubling the volume of fuel that can be injected into the engine. As before, I also installed a fuel pressure gauge.
+
+The large injectors were crucial as I wanted to run E85. The ethanol molecule is larger because there is oxygen attached, so the injectors need a higher volumetric capacity. Ethanol also tolerates being compressed more than 91 or 93 octane fuels.
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="/assets/car/manifold5.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="/assets/car/manifold6.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="/assets/car/manifold7.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+<div class="col three caption">
+    Before, during, and after the manifold installation
+</div>
+
+## Forced Induction
+
+All this was building up to the supercharger, which unlocks the power with ethanol. The supercharger supplies more air; for a clean burn, more air needs more fuel. More air *and* more fuel makes more power. The supercharger also compresses the air; compressing and mixing the air with a fuel that *likes* to be compressed makes even ***more*** power, all together pushing it to over 300 horsepower.
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="/assets/car/super1.jpg" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="/assets/car/super2.jpg" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+<div class="caption">
+    Fitting the compressor and intercooler
+</div>
+
+<div class="img_row">
+    <img class="col three" src="/assets/car/super.gif">
+</div>
+
+<div class="caption">
+    First start, cooking off some spilt coolant
+</div>
+
+## End of All Good Things
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="/assets/car/beginning.jpg" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="/assets/car/total1.jpg" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+<div class="caption">
+    Left, 2023. Right, early spring 2024
+</div>
+

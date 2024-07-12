@@ -1,0 +1,53 @@
+---
+layout: post
+title: Scrambled PIN Tetris Puzzle
+date: 2024-07-11
+description: 
+tags: math stats
+thumbnail: /assets/pin/example1.jpg
+---
+
+A quick story to explain the concept:
+
+<div class="img_row">
+    <img class="col three" src="/assets/pin/scramble.jpg">
+</div>
+<div class="caption">
+    Shamelessly stolen, GrapheneOS doesn't allow screenshots of the lock screen
+</div>
+
+### Mexico
+One day while out on a scooter I got caught out in the rain, and when I went to plug in my phone I shorted the screen- the port had water in it. I replaced the screen but lost the fingerprint reader functionality in the process. To unlock my phone anymore I had to use a pin, and after unlocking the phone over and over my screen was developing smudges in place of the PIN numbers. <strike>Android</strike> [GrapheneOS](https://grapheneos.org/) has a function to "Scramble PIN input layout" within the Security tab of the Settings app, directly addressing my smudging problem. After a bajillion scrambles of my PIN pattern making various Tetris-shapes, I started to wonder, how often does this happen?
+
+
+### What defines a Tetris-shape?
+
+<div class="img_row">
+    <img class="col three" src="/assets/pin/5tetrominoes.svg">
+</div>
+
+By Tetris-shape I mean tetromino. "A tetromino is a geometric shape composed of four squares, connected orthogonally" - [Wikipedia](https://en.wikipedia.org/wiki/Tetromino). Shapes could be translated and/or rotated, I considered any orientation of the shape what would fit on the number pad. *If I counted correctly*, there are 42 cases where a 4 digit number creates a shape. 
+
+*I did not include rotations of the square. Square is Square
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="/assets/pin/example1.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="/assets/pin/example2.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="/assets/pin/example3.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+<br>
+
+## Solution
+
+Let's get a baseline. To make a shape you need 4 *different* numbers. If any repeat you couldn't make the 4th square. That said, there are 10 x 9 x 8 x 7 (*10P4*), or 5,040 possible non-repeating PIN numbers. This is an important assumption.
+
+Since each shape is a set of 4 numbers, there are 4! or 24 possible permutations of that set that can create that shape. If we consider the other 42 orientations, there are 42*4! or 1,008 sets of 4 numbers that can create a tetromino.
+
+Using some rough maths, we can say there's ~1/5 (20%) chance that a PIN creates a Tetrino.

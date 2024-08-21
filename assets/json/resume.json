@@ -23,6 +23,11 @@
       "endDate": "2014"
     }
   ],
+  "skills": [
+    {
+      "keywords": ["Python, MATLab, Statistical Analysis", "C/C++, Git, CMake, ROS","Onshape, Solidworks, AutoCAD, Inventor", "JavaScript, HTML, CSS, JSON", "Linux, Windows"]
+    }
+  ],
   "work": [
     {
       "name": "Naxos Lab LLC",
@@ -115,7 +120,6 @@
   "awards": [],
   "certificates": [],
   "publications": [],
-  "skills": [],
   "languages": [],
   "interests": [],
   "references": [],

@@ -116,7 +116,9 @@ If I were to develop this further, it absolutely would start with incorportating
 
 ## Follow-up 
 
-I wrote a script to display historical data. Here is the morning rush 3:30am-10:30am
+I wrote a script to display historical data. Here is the morning rush 3:30am-~~10:30am~~4:30am, when the trains' schedules start. Red and Blue lines run 24 hours.
+
+*filesize limit
 
 <iframe src="/assets/tracker/cta_train_map.html" width="100%" height="600px" frameborder="0"></iframe>
 

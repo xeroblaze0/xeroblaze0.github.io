@@ -1,54 +1,45 @@
 ---
 layout: post
-title: Toybaru - Porsche Killer
+title: Toybaru
 date: 2024-01-19
-description: Daily driver turned Porsche killer
+description: Daily driver turned track car
 tags: car mech
 thumbnail: /assets/car/car_01.jpeg
 ---
 
-<!-- <p>
-  <a href=""></a><div class=""></div>
-  <a href="https://github.com/alexanderhay2020/499_pneumatic"><div class="color-button">GitHub</div></a>
-  <a href="https://youtu.be/s4PYeK4FzfA"><div class="color-button">YouTube</div></a>
-  <a href="/assets/pdf/manual.pdf"><div class="color-button">Manual</div></a>
-  <a href="https://drive.google.com/drive/folders/13laoiJDyfBOlWCCcYVfk1w05I2iibtdy?usp=sharing"><div class="color-button">Solidworks</div></a>
-</p> -->
-
-------
-## History
+Every car enthusiast has a story. Mine begins in 2015 with a nearly new Scion FRS. With only 38,000 miles on the clock, it was a perfect blank canvas. For me, it became more than just a daily driver; it was a therapy project, a reflection of my own journey, and a challenge to see just how far I could push a humble "Toyobaru" platform. The goal? To build a car that could punch well above its weight class.
 
 <div class="img_row">
     <img class="col three" src="/assets/car/car_01.jpeg">
 </div>
 
-<br>
+---
+### The Spec Sheet
 
-In 2015 I bought a Scion FRS, still under warranty with 38k miles on it. It became a therapy project and a reflection of my own station in life. I saw it as a challenge to see how far I could go with my daily driver. The motivation to do this has always been there and I think always will be. Who doesn't love fast, fun, cars.
+| Specification | Stock | Modified |
+| :--- | :--- | :--- |
+| **Weight** | ~2,800 lbs | ~2,850 lbs |
+| **Horsepower**| ~200 hp | **~320 hp** |
+| **Torque** | ~151 lb-ft | **~220 lb-ft** |
+| **Balance** | 53% Front / 47% Rear | ~54% Front / 46% Rear |
 
-## Modificaitons
+---
+### The Build: A Methodical Transformation
 
-<br>
+This wasn't a weekend project. It was a slow, deliberate process of upgrading and refining, turning a capable sports coupe into a finely tuned performance machine.
 
-<div class="img_row">
-    <img class="col three" src="/assets/car/logos.png">
-</div>
+| Part | Description |
+| :--- | :--- |
+| **Supercharger** | HKS GT2 Supercharger Pro V3 |
+| **Injectors** | Injector Dynamics 1050x |
+| **E85 Sensor** | Visconti Flex Fuel Kit |
+| **Oil Cooler** | HKS S-Type Oil Cooler |
+| **Intake Manifold** | Subaru STi Aluminum Intake Manifold |
+| **Gauges** | GlowShift Triple Gauge Kit |
 
-<br>
+#### Foundation: Brakes and Maintenance
 
- * Tein Flex Z Coilovers
- * Borla V2 Exhaust Header
- * STi Aluminum Intake Header
- * HKS Oil Cooler
- * Saikou Michi Catch Cans
- * Radium Fuel Rails
- * Injector Dynamics 1050x Fuel Injectors
- * E85 Flex Fuel Sensor
- * HKS Supercharger
-
-## Maintenance
-
-After 2 years of living in Chicago then moving to Montreal for another 2 years, the car needed attention. My brakes needed replaced and one of the rear bearing hubs was going bad. Years of driving in corrosive environments with spacers installed was about to teach me a lesson.
+Before adding power, you have to ensure you can control it. After years of daily driving in the corrosive environments of Chicago and Montreal, the car needed some attention. The brakes were shot, and a rear wheel bearing was failing. This is where I learned a hard lesson about wheel spacers and dissimilar metal corrosion. The spacers had effectively welded themselves to the hubs, requiring me to drill them out just to get them off.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -61,92 +52,28 @@ After 2 years of living in Chicago then moving to Montreal for another 2 years, 
         {% include figure.html path="/assets/car/damage3.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
-
-<div class="col three caption">
-    The damage was such that I had to drill through the spacer to remove it from the stud. The stud was also damaged.
-</div>
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/car/brake1.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/car/brake3.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/car/brake4.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/car/brake5.jpg" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/car/brake6.jpg" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-
 <div class="caption">
-    Old vs new
+    The painful process of removing a seized wheel spacer.
 </div>
 
-The installation was aggressive, enough that I had bent the brake shield and was causing it to rub. Easy fix, but an arguably my most sketchy diagnostic yet; running the car in gear on blocks.
+With the hubs repaired, I installed a fresh set of brakes, a crucial first step before turning up the power.
 
-<div class="img_row">
-    <img class="col three" src="/assets/car/brake7.jpg">
-</div>
+#### The Oil System: The Heart of the Build
 
-<div class="caption">
-    Don't try this at home
-</div>
-
-## Oil System
-
-Moving on to the fun stuff, I start with an HKS oil cooler for a few reasons; it doesn't require any other parts, it increases engine longevity, and is one of the cornerstones of the rest of the build. The installation is fairly invasive, requiring me to remove the front bumper and cut into several parts. HKS is a quality company but there things lost in translation in the manual. 
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/car/oil1.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/car/oil2.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/car/oil3.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
-
-<div class="col three caption">
-    The radiatior mounts in front of the wheel. I used a dremel to cut through the bumper and fender liner to allow airflow.
-</div>
-
-At the same time I also installed new triple gauges that allow me to monitor the oil system pressure and temperature. It's something I've always wanted since the first Fast and Furious movie, but more importantly they give me peace of mind that I can actively monitor the equipment I installed.
+The first major performance upgrade was an HKS oil cooler. This was a cornerstone of the build for several reasons. It increases engine longevity under stress, it's a prerequisite for forced induction, and it gave me an excuse to install a set of triple gauges to monitor oil pressure and temperature. It's a nod to the first *Fast and Furious* movie, but more importantly, it provides peace of mind when you're pushing an engine to its limits.
 
 <div class="img_row">
     <img class="col three" src="/assets/car/gauge1.jpg">
 </div>
-
-<div class="col three caption">
-    Gauge test, they are reading from the sensors. Boost is not attached at this time
+<div class="caption">
+    The new gauges, ready to monitor the engine's vitals.
 </div>
 
-## Intake & Fuel System
+#### Intake and Fuel: Preparing for Boost
 
-At the start of the summer I bought an aluminum intake manifold from a Subaru tech on Facebook Marketplace. It sat in the back of my trunk for awhile before the rest of the parts came in. 
+The real power gains would come from forced induction, but first, the engine needed to breathe and drink. I sourced a lightweight aluminum intake manifold from an STi and paired it with Radium fuel rails and massive Injector Dynamics 1050x fuel injectors. These injectors more than double the stock fuel flow, a critical upgrade for the next step: E85.
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/car/manifold2.jpg" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/car/manifold4.jpg" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-
-The fuel system mounts on top of the manifold and I wanted to do everything in one shot. Attached to the manifold were two Radium fuel rails with Injector Dynamics 1050x fuel injectors, more than doubling the volume of fuel that can be injected into the engine. As before, I also installed a fuel pressure gauge.
-
-The large injectors were crucial as I wanted to run E85. The ethanol molecule is larger because there is oxygen attached, so the injectors need a higher volumetric capacity. Ethanol also tolerates being compressed more than 91 or 93 octane fuels.
+Ethanol has a higher octane rating than gasoline, meaning it can withstand more compression before detonating. This makes it the perfect fuel for a high-compression, forced-induction engine.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -159,37 +86,24 @@ The large injectors were crucial as I wanted to run E85. The ethanol molecule is
         {% include figure.html path="/assets/car/manifold7.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
-
-<div class="col three caption">
-    Before, during, and after the manifold installation
-</div>
-
-## Forced Induction
-
-All this was building up to the supercharger, which unlocks the power with ethanol. The supercharger supplies more air; for a clean burn, more air needs more fuel. More air *and* more fuel makes more power. The supercharger also compresses the air; compressing and mixing the air with a fuel that *likes* to be compressed makes even ***more*** power, all together pushing it to over 300 horsepower.
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/car/super1.jpg" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/car/super2.jpg" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-
 <div class="caption">
-    Fitting the compressor and intercooler
+    Before, during, and after the manifold and fuel system installation.
 </div>
+
+#### Forced Induction: The HKS Supercharger
+
+This was the moment all the other modifications had been leading up to. The HKS supercharger is the key that unlocks the engine's true potential. The principle is simple: more air + more fuel = more power. The supercharger forces more air into the engine, and the upgraded fuel system delivers the E85 to match. The result is a jump from the stock 200 horsepower to a much more respectable **320 horsepower**.
 
 <div class="img_row">
     <img class="col three" src="/assets/car/super.gif">
 </div>
-
 <div class="caption">
-    First start, cooking off some spilt coolant
+    The first start after the supercharger installation, cooking off some spilt coolant.
 </div>
 
-## End of All Good Things
+### The End of an Era
+
+Every project has its end. After years of faithful service as a daily driver and a weekend warrior, the journey with this car came to an unfortunate close in the spring of 2024. But the lessons learned and the thrill of building something with my own hands will stay with me forever. It was more than just a car; it was a rolling testament to the joy of engineering and the pursuit of performance.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -199,8 +113,7 @@ All this was building up to the supercharger, which unlocks the power with ethan
         {% include figure.html path="/assets/car/total1.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-
 <div class="caption">
-    Left, 2023. Right, early spring 2024
+    Left, in its prime in 2023. Right, the unfortunate end in early 2024.
 </div>
 

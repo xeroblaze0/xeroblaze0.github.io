@@ -7,104 +7,63 @@ tags: API, python, GPT
 thumbnail: /assets/tracker/folium_trains.png
 ---
 
-An app to track all the things I see out the window
+Back in Chicago, my apartment in Uptown offers a unique vantage point on the city's constant motion. From my window, I can see the hustle of Sheridan Road, the vastness of Lake Michigan, and the steady stream of planes on their final approach to O'Hare. I often found myself jumping between Flightradar24, MarineTraffic, and Google Maps, trying to piece together a complete picture of the traffic around me. I decided to build a single dashboard to see it all at once.
 
 <div class="img_row">
     <img class="col three" src="/assets/tracker/Screenshot.png">
 </div>
 <div class="caption">
-    Downtown Chicago with transit overlay
+    A view of downtown Chicago with a transit overlay.
 </div>
 
-### Chicago
+### The Plan: Sourcing the Data
 
-Back again in Chicago, I'm in Uptown now off of Sheridan Rd. with a view of the lake and the approach lane for O'hare. I love being able to see the modals make the hustle of Chicago. I find myself on Flightradar24 and MarineTraffic often, and it's not great switching between tabs all the time, especially if Google Maps is also open. I endeavored to address that.
+My goal was to combine data from multiple sources onto a single satellite map. I found that the Chicago Transit Authority (CTA) offered a free API for their train data, which was a great start. For planes and boats, I planned to use APIs from Flightradar24 and MarineTraffic.
 
-### Scope & Sources
+I used Google Colab notebooks to work with the APIs. This was a huge help, as I've always found the syntax and structure of API requests to be a bit of a pain point. Using Gemini within Colab supercharged my ability to parse the data and quickly understand its structure.
 
-I did some quick research and found that CTA offered an API. For flights I'd start with Flightradar24, and boats I'd start with MarineTracker. For the map I wanted a satelite view. I didn't know how I wanted to source a map, but I wanted a live feed if possible, and failing that, some aerial/satelite view.
+### The Real Problem: Plotting the Data
 
-I used Google colab notebooks to dial in the API. APIs have always been a pain point for me, the syntax and understanding the structure to receive the data just never percolated. Colab with Gemini really helped me through that. 
-
-### CTA and the map
-
-As I mentioned, Gemini in colab really turbo-charged my ability to parse through the response data, and it was then that I realized I actually had a different problem: how was I going to plot the data?
-
-I spent a considerable amount of time (3 days) figuring this out and epxloring options. I initially started with geopandas and a shapefile of the neighborhoods of Chicago.
+Once I had the CTA data, I ran into a new problem: how to plot it on a map? I spent several days exploring different options. I started with GeoPandas, a library I was familiar with, and a shapefile of Chicago's neighborhoods.
 
 <div class="img_row">
     <img class="col three" src="/assets/tracker/shapefile_plot.png">
 </div>
-
 <br>
 
-Voila! It's not perfect but it does plot the trains where trains ought to be. I used geopandas because I was already familiar with pandas and matplotlib. I learned about shapefiles and learned they likely weren't right for this application. Following the success of learning the CTA API, I searched for a similar service.
-
-<div class="img_row">
-    <img class="col three" src="/assets/tracker/arcgis.png">
-</div>
-
-<div class="caption">
-    Accidentally every route
-</div>
-
-<br>
-
-It was a matter of time before finding ArcGIS. It's a powerful suite that's able to provide a lot, especially with plugin support. For personal projects I strongly prefer to use Free and Open-Source Software. Enter Folium.
+This worked, but it wasn't ideal. Shapefiles are powerful, but they felt like overkill for this project. I needed a more dynamic mapping solution. After a bit more research, I discovered Folium, a Python library that makes it easy to create interactive maps. It was the perfect tool for the job.
 
 <div class="img_row">
     <img class="col three" src="/assets/tracker/folium_routes.png">
 </div>
 
-### Information
+### A Lesson in Data Amalgamation
 
-Playing around with Folium in Colab with Gemini was really working out and I was able to work out an aerial view. When I plotted the trains I later thought being able to see the routes would be a big UI improvement, and this is where the nature of the project finally revealed itself. I thought I was building what was merely a plotting app. Really, I was building a fetching, receiving, and amalgamzing app and my problem was sourcing the information. The CTA trains came from one source, the routes another, the stations another, the map another. I haven't even gotten to the planes or boats yet. I moved on anyway, cognizant that I might have to start optimizing for query requests
+Working with Folium was a breakthrough. I could finally plot the train locations on a proper satellite map. I then decided to add the train routes and station locations to provide more context. This is when the true nature of the project revealed itself. I wasn't just building a plotting app; I was building a data amalgamation app. The train locations, routes, stations, and the map itself all came from different sources. I was fetching, receiving, and combining all this information into a single, cohesive view.
 
-### And for madame, a prototype
+### Building the Prototype
+
+After a lot of debugging (especially with the custom icons), I had a working prototype. Hovering over a station reveals its information, and the trains are plotted in their correct locations.
 
 <div class="img_row">
     <img class="col three" src="/assets/tracker/folium_trains.png">
 </div>
 
-After spending a rather awful long time debugging icons, I was able to create this masterpiece. Highlighting over a station shows its information in the tooltip. I settled for a simple dot rather than one with a letter in it (like you'd see at the station itself) due to the nature of the size constraints of the map at zoomed out scales. It isn't until you zoom in, where there's space to draw lines without overlap, that you're able to draw in more information. Given how I was going about this particular application, dynamically retireving the zoom level to draw the correct level of information wasn't feasible (or possible?).
-
-Also compunding issues was the CSS nature of the icons. After trying to offset, I tried redrawing them scaled and proportioned to address the offset. Failing both of those, I found a CSS attribute and asked Gemini to walk me through it. Failing all three approaches I just asked Gemini how to address it; the initial approach with the offset was the right approach, but it suggested using different parameters to acheive the desired effect. After some back and forth, we were able to dial it in.
-
-### Gemini
-
-As I mentioned before, Gemini really turbo-charged how quickly and effectively I was able to test out and implement new ideas. Syntax was something that I struggled with. Maybe it's a dyslexic thing. But Gemini was able to insert code that worked and allowed me to continue rather unabatedly and focus on the real challenges that I wanted to address. 
-
-I still have strong apprehensions and opinions on using GPT, especially in regards to hallucinating nonsense into the public domain, but in controlled and guided applications like this, there can be a lot of success.
-
-That said, there was also a learning process to using it. In colab, it was almost an all or nothing approach. If it had generated some code, and I combed through making adjustments for the task at hand, the next bit of code generation would undo that. Likewise, it'd often get stuck going the same method of exectution, even when told explicitly otherwise. Refreshing the page, the only way I knew how to start a new chat with Gemini, solved that issue, but interrupted the workflow quite a bit. In VS Studio Code I found it much more capable and easier to work with.
-
-### Final CTA Display
+One of the biggest challenges was getting the custom icons to display correctly. After trying several approaches—offsetting, redrawing, and scaling—I was still stuck. I turned to Gemini for help, and after some back-and-forth, it suggested a different set of parameters for the offset approach that finally worked. This is where I found AI tools to be most helpful: not as a replacement for my own problem-solving, but as a partner to help me get unstuck and explore different solutions.
 
 <div class="img_row">
     <img class="col three" src="/assets/tracker/final_cta2.png">
 </div>
 
 <div class="caption">
-    Added layer control with Gemini
+    The final CTA display, with a layer control added with the help of Gemini.
 </div>
 
-## Planes and Boats
+### The Roadblock: Planes and Boats
 
-Success with the CTA portion had me feeling confident, but that's where that ends. Turns out finding information is hard, let alone free information. And I suppose that makes sense. The CTA is a treasure in this regard.
+With the CTA portion working well, I moved on to planes and boats, but this is where I hit a wall. It turns out that real-time data, especially for flights and marine traffic, is hard to come by for free. The free APIs I found only provided status updates ('active', 'landed', etc.), not real-time location data. To get the live data I wanted, I would have needed a paid subscription or my own ADS-B receiver, and I was determined to keep this a software-only project. With that, I had to scrap the plane and boat tracking portion of the project.
 
-Regarding flight data, I began with a source that looked promising from aviation stack. Again using Gemini to help parse API data, we drew what looked to be garbage. After quite a bit of trial and error and drawing more garbage (this is where I struggled with Gemini), we were able to work through it. The challenge here is that there is no real time information, only statuses of 'active', 'landed', 'scheduled', etc. Arrival and departure time would've needed to have been fetched elsewhere then matched, then interpolated in some fashion, and plotted in an informationally accurate way. In a typical use-case scenario, that would be fine, but I live on approach to O'Hare. It is hard to interpolate a flight path without affecting the take-off or descent. At O'Hare they queue landing planes over Lake Michigan. If I plotted planes coming in any which way, I'd miss what actually just flew over my head.
-
-<div class="img_row">
-    <img class="col three" src="/assets/tracker/plane.png">
-</div>
-
-<div class="caption">
-    Airbus coming in from Mexico, pathed over Lake Michigan for queueing
-</div>
-
-Every source I checked required some sort of payment subscription for real-time data. A few sites have programs where they'll send you a free receiver and antenna to help build the network, or you can use your own and access premium features at discount. After doing research and going down the rabbit hole of RTL-SDR, I decided that this would *not* be another hardware project. With that, I scrapped adding plane information. With boats it was a similar story, but no data to test with.
-
-## Conclusion
+### Conclusion
 
 Below is a live-ish display of the CTA trains. The map is generated by a Python script that fetches data from the CTA's API and plots it on a Folium map. The map is then saved as an HTML file and displayed here.
 
@@ -112,7 +71,8 @@ Below is a live-ish display of the CTA trains. The map is generated by a Python 
 
 <br>
 
-If I were to develop this further, it absolutely would start with incorportating more real-time information into the map, and acutally display it as real, moving information, as opposed to fetching and displaying once. One other feature I'd include is the ability to change map backgrounds; the aerial view can be noisy.
+If I were to develop this further, the first step would be to incorporate more real-time data and find a way to display it dynamically, rather than as a static snapshot. But for now, it's a satisfying solution to my original problem, and a great learning experience in the world of APIs, data visualization, and the power of AI-assisted coding.
+
 
 ## Follow-up 
 

@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://xeroblaze0.github.io/sitemap.xml
+Sitemap: https://alex-hay.com/sitemap.xml

@@ -9,7 +9,7 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  address: relocating
+  address: recalibrating
 
 url: https://xeroblaze0.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -21,7 +21,7 @@ back_to_top: true # set to false to disable the back to top button
 
 ---
 
-My name is Alex Hay, I work at the intersection of engineering and neuroscience in the field of rehabilitation, specifically control of prostethic devices.
+My name is Alex Hay, I work at the intersection of engineering and neuroscience in the field of rehabilitation.
 
 
 <!-- My name is Alex Hay, in April 2021 I joined the University of Montreal as a research associate in the Department of Neuroscience. We train monkeys to perform specific tasks while we read from an electrode implanted in their brain. Montreal sits at an intersection between neurosceince and AI, progress is a partnership. -->
